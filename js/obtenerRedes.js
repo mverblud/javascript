@@ -37,6 +37,6 @@ jQuery(() => {
         }
     }
 
-    insertarRedes(); ç
+    insertarRedes();
 
 });
