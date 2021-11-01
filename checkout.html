@@ -67,16 +67,23 @@
     </header>
 
     <main class="container">
-        <div class="py-5 text-center">
-            <img class="d-block mx-auto mb-4" src="imagenes/logoHorizontalAmarillo.png" width="250" height="80">
-            <h2>Formulario de Pago</h2>
+    
+        <div class="conteiner-fluid pt-4 py-5">
+            <!-- Titulo General -->
+            <div class="row bg-dark text-secondary text-center px-4 py-5 my-2">
+                <div class="col">
+                    <img class="d-block mx-auto mb-4" src="imagenes/logoHorizontalAmarillo.png" alt="" width="250"
+                        height="65">
+                    <h1 class="display-5 text-white">Formulario de pago</h1>
+                </div>
+            </div>
         </div>
 
         <div class="row g-5">
-            <div class="col-md-5 col-lg-4 order-md-last">
+            <div class="col-md-5 col-lg-6 order-md-last">
                 <h4 class="d-flex justify-content-between align-items-center mb-3">
-                    <span class="text-primary">Su carrito</span>
-                    <span class="badge bg-primary rounded-pill">3</span>
+                    <span class="text-warning">Su carrito</span>
+                    <span id="subCarrito" class="badge bg-warning rounded-pill">3</span>
                 </h4>
                 <ul id="listadoCarrito" class="list-group mb-3">
                 </ul>
@@ -89,13 +96,13 @@
 
                 <form class="card p-2">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Promo code">
-                        <button type="submit" class="btn btn-secondary">Redeem</button>
+                        <input type="text" class="form-control" placeholder="Código de promoción">
+                        <button type="submit" class="btn btn-secondary">Canjear</button>
                     </div>
                 </form>
             </div>
-            <div class="col-md-7 col-lg-8">
-                <h4 class="mb-3">Dirección de envio</h4>
+            <div class="col-md-7 col-lg-6">
+                <h4 class="mb-3">Dirección de envío</h4>
                 <form class="needs-validation" novalidate>
                     <div class="row g-3">
                         <div class="col-sm-6">
@@ -118,7 +125,7 @@
                             <label for="username" class="form-label">Usuario</label>
                             <div class="input-group has-validation">
                                 <span class="input-group-text">@</span>
-                                <input type="text" class="form-control" id="username" placeholder="Username" required>
+                                <input type="text" class="form-control" id="username" placeholder="Usuario" required>
                                 <div class="invalid-feedback">
                                     Your username is required.
                                 </div>
@@ -127,8 +134,8 @@
 
                         <div class="col-12">
                             <label for="email" class="form-label">Email <span
-                                    class="text-muted">(Optional)</span></label>
-                            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                                    class="text-muted">(Opcional)</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="tu@ejemplo.com">
                             <div class="invalid-feedback">
                                 Please enter a valid email address for shipping updates.
                             </div>
@@ -136,22 +143,16 @@
 
                         <div class="col-12">
                             <label for="address" class="form-label">Dirección</label>
-                            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                            <input type="text" class="form-control" id="address" placeholder="Av. Colon 1248" required>
                             <div class="invalid-feedback">
                                 Please enter your shipping address.
                             </div>
                         </div>
 
-                        <div class="col-12">
-                            <label for="address2" class="form-label">Dirección 2 <span
-                                    class="text-muted">(Optional)</span></label>
-                            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-                        </div>
-
                         <div class="col-md-5">
                             <label for="country" class="form-label">País</label>
                             <select class="form-select" id="country" required>
-                                <option value="">Choose...</option>
+                                <option value="">Seleccionar...</option>
                                 <option>United States</option>
                             </select>
                             <div class="invalid-feedback">
@@ -162,7 +163,7 @@
                         <div class="col-md-4">
                             <label for="state" class="form-label">Ciudad</label>
                             <select class="form-select" id="state" required>
-                                <option value="">Choose...</option>
+                                <option value="">Seleccionar...</option>
                                 <option>California</option>
                             </select>
                             <div class="invalid-feedback">
@@ -171,7 +172,7 @@
                         </div>
 
                         <div class="col-md-3">
-                            <label for="zip" class="form-label">Codigo Postal</label>
+                            <label for="zip" class="form-label">Código Postal</label>
                             <input type="text" class="form-control" id="zip" placeholder="" required>
                             <div class="invalid-feedback">
                                 Zip code required.
@@ -218,7 +219,7 @@
                         <div class="col-md-6">
                             <label for="cc-name" class="form-label">Nombre de la tarjeta</label>
                             <input type="text" class="form-control" id="cc-name" placeholder="" required>
-                            <small class="text-muted">Full name as displayed on card</small>
+                            <small class="text-muted">Como se muestra en la tarjeta</small>
                             <div class="invalid-feedback">
                                 Name on card is required
                             </div>
@@ -232,7 +233,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-6">
                             <label for="cc-expiration" class="form-label">Fecha Vencimiento</label>
                             <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
                             <div class="invalid-feedback">

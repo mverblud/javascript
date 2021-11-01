@@ -2,7 +2,7 @@
     {
         "id": 1,
         "codigo": "34301G-COR",
-        "nombre": "AMORTIGUADOR CHEVROLET CORSA 94/... DELANTERO",
+        "nombre": "Amortiguador chevrolet corsa 94/... Delantero",
         "imagen": "imagenes/productos destacados/34301G.jpg",
         "precio": 3550,
         "cantidad": 1
@@ -10,7 +10,7 @@
     {
         "id": 2,
         "codigo": "22181-COR",
-        "nombre": "AMORTIGUADOR PEUGEOT 404 NAFTA/DIESEL .../82 DELANTERO",
+        "nombre": "Amortiguador Peugeot 404 Nafta/Diesel .../82 Delantero",
         "imagen": "imagenes/productos destacados/22181.jpg",
         "precio": 2100,
         "cantidad": 1
@@ -18,7 +18,7 @@
     {
         "id": 3,
         "codigo": "34302G-COR",
-        "nombre": "AMORTIGUADOR CHEVROLET CORSA 94/... DELANTERO",
+        "nombre": "Amortiguador chevrolet corsa 94/... Delantero",
         "imagen": "imagenes/productos destacados/34301G.jpg",
         "precio": 4500,
         "cantidad": 1
@@ -26,7 +26,7 @@
     {
         "id": 4,
         "codigo": "22182-COR",
-        "nombre": "AMORTIGUADOR PEUGEOT 404 NAFTA/DIESEL .../82 DELANTERO",
+        "nombre": "Amortiguador Peugeot 404 Nafta/Diesel .../82 Delantero",
         "imagen": "imagenes/productos destacados/22181.jpg",
         "precio": 1750,
         "cantidad": 1

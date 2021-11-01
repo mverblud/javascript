@@ -1,8 +1,11 @@
 // Recupero carrito en localstorage
 const productoLocalStorage = JSON.parse(localStorage.getItem("carrito"));
 const totalAPagar = JSON.parse(localStorage.getItem("totalAPagar"));
+const totalCarrito = JSON.parse(localStorage.getItem("totalCarrito"));
 
 $("#total").html(`$${totalAPagar}`);
+$("#subCarrito").html(`${totalCarrito}`);
+$("#iconCarrito").html(`${totalCarrito}`);
 
 const insertarCarrito = () => {
 
