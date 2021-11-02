@@ -53,14 +53,13 @@
 
                     </ul>
 
-                    <form action="" class="d-flex">
-                        <a class="btn btn-outline-light me-2" href="error404.html">Iniciar Sesión</a>
-                        <button type="button" class="btn btn-warning me-2">Regístrate</button>
-                        <button class="btn btn btn-warning" type="submit">
-                            <i class="bi-cart-fill me-1"></i>
-                            <span id="iconCarrito" class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-                        </button>
-                    </form>
+                    <a class="btn btn-outline-light me-2" href="error404.html">Iniciar Sesión</a>
+                    <button type="button" class="btn btn-warning me-2">Regístrate</button>
+                    <button id="btnCarrito" class="btn btn-warning boton-canasta">
+                        <i class="bi-cart-fill me-1"></i>
+                        <span id="iconCarrito" class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                    </button>
+
                 </div>
             </div>
         </nav>
@@ -103,11 +102,10 @@
                     <a href="checkout.html">Ir a Pagar</a>
                 </div>
             </div>
-
-
         </div>
 
-
+        <div class="canasta" id="contenedor-general-canasta">
+        </div>
 
     </main>
 
@@ -157,14 +155,14 @@
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
 
-    <!--Link jquery-->   
+    <!--Link jquery-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <!--Link js Propios-->
+    <script src="js/carroProductos.js"></script>
     <script src="js/obtenerProductos.js"></script>
     <script src="js/obtenerRedes.js"></script>
-    <script src="js/carroProductos.js"></script>
 </body>
 
 </html>

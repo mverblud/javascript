@@ -203,3 +203,30 @@ body {
 
 .card div h2 {
   color: #185ADB; }
+
+/* Curso Javascript*/
+
+.canasta {
+  min-width: 400px;
+  max-width: 400px;
+  border-left: 1px solid #ececec;
+  text-align: center;
+  padding: 20px 0 0 0;
+  background-color: #efefef;
+  position: absolute;
+  right: -400px;
+  top: 0;
+  bottom: 0;
+  transition: .3s;
+}
+
+.canasta.on {
+  right: 0;
+}
+
+.boton-canasta {
+  right: 10px;
+  top: 20px;
+  z-index: 2;
+  cursor: pointer;
+}

@@ -40,9 +40,17 @@ const actualizarCarritoIcon = () => {
     localStorage.setItem("totalCarrito", totalCarrito);
 }
 
+// TOGGLE BOTÓN CANASTA
+$(".boton-canasta").on("click", function () {
+    $("#contenedor-general-canasta").toggleClass("on");
+});
+
 /* Con esta función puedo agregar productos del contenedor a la canasta */
 const insertarProductosACanasta = (producto) => {
     if ($(`#productoCanasta-${producto.id}`).length === 0) {
+        if (!$("#contenedor-general-canasta").hasClass("on")) {
+            $(".boton-canasta").trigger("click");
+        }
         $('#listadoCarrito').append(`
             <li class="list-group-item d-flex justify-content-between lh-sm" id="productoCanasta-${producto.id}">
                 <div>
