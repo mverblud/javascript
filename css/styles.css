@@ -213,7 +213,7 @@ body {
   text-align: center;
   padding: 20px 0 0 0;
   background-color: #efefef;
-  position: absolute;
+  position: fixed;
   right: -400px;
   top: 0;
   bottom: 0;
