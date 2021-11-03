@@ -16,7 +16,7 @@ jQuery(() => {
                                 <img class="card-img-top" src="${producto.imagen}" alt="">
                                 <div class="card-body p-4 border-top border-2">
                                     <div class="text-center">
-                                        <h5 class="card-title">${producto.nombre}</h5>
+                                        <h5 class="card-title text-uppercase">${producto.nombre}</h5>
                                         <p class="card-text">${producto.codigo}</p>
                                         <p class="card-text">$${producto.precio}</p>
                                     </div>

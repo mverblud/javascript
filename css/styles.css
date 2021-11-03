@@ -207,14 +207,14 @@ body {
 /* Curso Javascript*/
 
 .canasta {
-  min-width: 400px;
-  max-width: 400px;
+  min-width: 500px;
+  max-width: 500px;
   border-left: 1px solid #ececec;
   text-align: center;
   padding: 20px 0 0 0;
   background-color: #efefef;
   position: fixed;
-  right: -400px;
+  right: -500px;
   top: 0;
   bottom: 0;
   transition: .3s;
