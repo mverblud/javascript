@@ -53,11 +53,17 @@ const insertarProductosACanasta = (producto) => {
         }
         $('#listadoCarrito').append(`
             <li class="list-group-item d-flex justify-content-between lh-sm" id="productoCanasta-${producto.id}">
-                <div>
-                    <h6 class="my-0">${producto.nombre}</h6>
-                    <b> Cantidad: <span id="producto-cantidad-${producto.id}">${producto.cantidad}</span></b>
+                <div class="row mx-1">
+                    <div class="col-8">
+                        <h6 class="my-0">${producto.nombre}</h6>
+                    </div>
+                    <div class="col-2">
+                        <b>Cant:<span id="producto-cantidad-${producto.id}">${producto.cantidad}</span></b>
+                    </div>
+                    <div class="col-2">
+                        <span class="text-muted">$${producto.precio}</span>
+                    </div>
                 </div>
-                <span class="text-muted">$${producto.precio}</span>
             </li>
         `)
 
