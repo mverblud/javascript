@@ -23,3 +23,24 @@ const insertarCarrito = () => {
 }
 
 insertarCarrito();
+
+(function () {'use strict'
+
+    var forms = document.querySelectorAll('.needs-validation')
+
+    Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }else{
+                    $("#formulario").remove();
+                    $("#exito").delay(200).fadeIn("slow");
+                    localStorage.clear();
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+})()
